@@ -1,19 +1,181 @@
-# Using the Figma design file
+# Frontend Mentor - QR code component solution
 
-Using this design file will help you practice building projects in the same way professionals do. Seeing the details in the design will help you improve your accuracy and build projects faster.
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
 
-[Figma](https://www.figma.com/) is an extremely popular design tool with a generous free tier and support for both Windows and Mac computers.
+## Table of contents
 
-To get started with Figma, [download the correct app for your operating system](https://www.figma.com/downloads/). You can then open the app and open the `.fig` design file by dragging it over the app or using the "import" button.
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-If you're going to use the Desktop App, you don't need to download the Font Installer from the downloads page. But if you're planning on using the Figma web app you should download and install it to ensure the fonts show up correctly.
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-If you haven't used Figma before, we recommend reading our "[Figma for developers: How to work with a design file](https://www.frontendmentor.io/articles/figma-for-developers-how-to-work-with-a-design-file-m6CZKZ1rC1)" article. 
+## Overview
 
----
+### Screenshot
 
-**⚠️ IMPORTANT ⚠️: Please be sure not to share our design files with anyone else. We include `.gitignore` files in the starter code download to help prevent you from accidentally uploading it to GitHub. Another easy way to prevent this is to keep the design file separate from your codebase.**
+![](./screenshot.jpg)
 
----
+Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-We hope you enjoy the challenge! 🙂
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+
+Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+
+**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties for reusable color variables
+- Flexbox for layout and centering
+- Mobile-first workflow
+- Google Fonts – Outfit typeface
+- Responsive design principles
+
+### What I learned
+
+#### 1. Using CSS Custom Properties (`:root`) for Theming and Reusability
+
+Defining colors as variables inside the `:root` selector allows me to maintain a consistent color scheme throughout the project. It also makes future updates easier — changing a single value updates the entire UI.
+
+```css
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(212, 45%, 89%);
+  --grey: hsl(216, 15%, 48%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+```
+
+Here, I declared four custom properties for colors. Using HSL lets me tweak lightness and saturation easily if needed.
+Then, throughout the CSS, I reference these variables like so:
+
+```css
+body {
+  background-color: var(--light-grey);
+}
+
+.card {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+```
+
+#### 2. Universal Reset and `box-sizing: border-box` for Consistent Layouts
+
+To avoid default browser margin and padding inconsistencies, I reset all elements’ margin and padding to zero and set `box-sizing` to `border-box`. This ensures padding and border are included in the element’s total width and height — making sizing predictable.
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+```
+
+This approach improves readability and maintainability, as colors are centrally managed.
+
+#### 3. Centering with Flexbox
+
+I used Flexbox on the `body` element to perfectly center the card component both vertically and horizontally.
+
+```css
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* full viewport height */
+  font-family: "Outfit", sans-serif;
+  background-color: var(--light-grey);
+}
+```
+
+- `display: flex` activates Flexbox layout.
+- `align-items: center` vertically centers children.
+- `justify-content: center` horizontally centers children.
+- `min-height: 100vh` ensures the body takes full viewport height for vertical centering.
+
+This is a much cleaner and more flexible alternative to older centering methods using margins or absolute positioning.
+
+#### 4. Using `overflow: hidden` to Respect Border Radius on Images
+
+To make sure the card’s rounded corners also clip the image inside it, I combined `border-radius` with `overflow: hidden` on the `.card` container.
+
+```css
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: var(--white);
+  box-shadow: 0 25px 25px 0 hsla(0, 0, 0, 0.0477);
+  width: 320px;
+  padding: 16px 16px 40px;
+  display: flex;
+  flex-direction: column;
+}
+```
+
+Without `overflow: hidden`, the image inside could spill out beyond the rounded corners. This technique keeps the visual shape clean without needing extra wrappers.
+The image itself is styled to be full width inside the card:
+
+```css
+.card-image {
+  width: 100%;
+  display: block; /* removes inline spacing */
+  /* No border-radius needed here because parent clips */
+}
+```
+
+## 5. Semantic HTML Structure for Accessibility and Clarity
+
+The HTML is structured with semantic tags to ensure accessibility and clear document flow:
+
+```html
+<div class="card">
+  <img
+    class="card-image"
+    src="/images/image-qr-code.png"
+    alt="Image of the QR Code"
+  />
+  <h2 class="card-title">Improve your front-end skills by building projects</h2>
+  <p class="card-description">
+    Scan the QR code to visit Frontend Mentor and take your coding skills to the
+    next level
+  </p>
+</div>
+```
+
+- The image has an `alt` attribute for screen readers.
+- The main heading uses `<h1>` for proper document outline.
+- Paragraphs use `<p>` for textual content.
+- The container `<div>` uses a class for styling but doesn't affect semantics.
+
+## Author
+
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+
+## Acknowledgments
+
+This project was completed independently.  
+I’m proud to have challenged myself and applied what I’ve learned through self-study and practice.  
+Thanks to the many online resources and tutorials that made this learning journey possible.
+
+```
+
+```
