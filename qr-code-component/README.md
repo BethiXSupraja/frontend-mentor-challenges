@@ -154,9 +154,9 @@ The HTML is structured with semantic tags to ensure accessibility and clear docu
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Supraja Bethi](https://frontendmentorqr-code-component.netlify.app/)
+- Frontend Mentor - [@BethiXSupraja](https://www.frontendmentor.io/profile/BethiXSupraja)
+- LinkedIn - [@supraja-bethi](https://www.linkedin.com/in/supraja-bethi/)
 
 ## Acknowledgments
 
