@@ -27,10 +27,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./src/assets/images/Screenshot-1.png)
-![](./src/assets/images/Screenshot-2.png)
-![](./src/assets/images/Screenshot-3.png)
-![](./src/assets/images/Screenshot-4.png)
+![](./assets/images/Screenshot-1.png)
+![](./assets/images/Screenshot-2.png)
+![](./assets/images/Screenshot-3.png)
+![](./assets/images/Screenshot-4.png)
 
 ### Links
 
