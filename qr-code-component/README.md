@@ -154,7 +154,7 @@ The HTML is structured with semantic tags to ensure accessibility and clear docu
 
 ## Author
 
-- Website - [Supraja Bethi](https://frontendmentorqr-code-component.netlify.app/)
+- Website - [Supraja Bethi](https://react-portfolio-suprajabethi.netlify.app/)
 - Frontend Mentor - [@BethiXSupraja](https://www.frontendmentor.io/profile/BethiXSupraja)
 - LinkedIn - [@supraja-bethi](https://www.linkedin.com/in/supraja-bethi/)
 

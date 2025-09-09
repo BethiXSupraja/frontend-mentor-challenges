@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/BethiXSupraja/frontend-mentor-challenges/tree/main/workit-landing-page)
+- Live Site URL: [Add live site URL here](https://workit-web-landing-page.netlify.app/)
 
 ## My process
 
@@ -208,7 +208,7 @@ This avoids brittle "magic numbers" and keeps layouts flexible.
 
 ## Author
 
-- Website - [Supraja Bethi](https://frontendmentorqr-code-component.netlify.app/)
+- Website - [Supraja Bethi](https://react-portfolio-suprajabethi.netlify.app/)
 - Frontend Mentor - [@BethiXSupraja](https://www.frontendmentor.io/profile/BethiXSupraja)
 - LinkedIn - [@supraja-bethi](https://www.linkedin.com/in/supraja-bethi/)
 
