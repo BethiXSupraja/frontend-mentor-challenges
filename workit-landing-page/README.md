@@ -16,8 +16,6 @@ This is a solution to the [Workit landing page challenge on Frontend Mentor](htt
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -33,8 +31,6 @@ Users should be able to:
 ![](./src/assets/images/Screenshot-2.png)
 ![](./src/assets/images/Screenshot-3.png)
 ![](./src/assets/images/Screenshot-4.png)
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
@@ -196,7 +192,7 @@ This avoids brittle "magic numbers" and keeps layouts flexible.
 }
 ```
 
-## Continued development
+### Continued development
 
 - Reduce & consolidate breakpoints using Grid `minmax/auto-fit` and fluid type (`clamp()`).
 - Try container queries to make components responsive to their own width.
@@ -204,7 +200,7 @@ This avoids brittle "magic numbers" and keeps layouts flexible.
 - Optimize images (AVIF/WebP, `picture`, `loading="lazy"`).
 - Tidy CSS with layers (`@layer`) and tokens in `:root`.
 
-## Useful resources
+### Useful resources
 
 - MDN: CSS Grid & Flexbox (clear, canonical docs)
 - web.dev: Fluid typography & responsive images
