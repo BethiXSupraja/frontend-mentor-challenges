@@ -1,4 +1,4 @@
-# Frontend Mentor - Workit landing page solution
+# Workit landing page
 
 This is a solution to the [Workit landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/workit-landing-page-2fYnyle5lu).
 
@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/BethiXSupraja/frontend-mentor-challenges/tree/main/workit-landing-page)
-- Live Site URL: [Add live site URL here](https://workit-web-landing-page.netlify.app/)
+- Solution URL: [Workit-Landing-Page-Solution](https://github.com/BethiXSupraja/frontend-mentor-challenges/tree/main/workit-landing-page)
+- Live Site URL: [Workit-Landing-Page](https://workit-web-landing-page.netlify.app/)
 
 ## My process
 
